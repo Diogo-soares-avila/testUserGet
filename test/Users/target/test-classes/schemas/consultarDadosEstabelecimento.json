@@ -1,0 +1,854 @@
+{
+  "type": "object",
+  "properties": {
+    "cdEstabelecimento": {
+      "type": "integer"
+    },
+    "cdPreCadastro": {
+      "type": "integer"
+    },
+    "cnpjCpf": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "tipoPessoa": {
+      "type": "string"
+    },
+    "razaoSocial": {
+      "type": "string"
+    },
+    "nomeFantasia": {
+      "type": "string"
+    },
+    "mcc": {
+      "type": "integer"
+    },
+    "faturamentoAnual": {
+      "type": "integer"
+    },
+    "datafuncacao": {
+      "type": "string"
+    },
+    "vlPatrimonioPessoal": {
+      "type": "integer"
+    },
+    "responsaveis": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "cdEstabelecimentoResponsavel": {
+              "type": "integer"
+            },
+            "nrCnpjCpf": {
+              "type": "string"
+            },
+            "dsNome": {
+              "type": "string"
+            },
+            "dtNascFundacao": {
+              "type": "string"
+            },
+            "participacao": {
+              "type": "integer"
+            },
+            "endereco": {
+              "type": "object",
+              "properties": {
+                "pais": {
+                  "type": "object",
+                  "properties": {
+                    "cdPais": {
+                      "type": "integer"
+                    },
+                    "dsPais": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "cdPais",
+                    "dsPais"
+                  ]
+                }
+              },
+              "required": [
+                "pais"
+              ]
+            },
+            "telefone": {
+              "type": "object",
+              "properties": {
+                "dddFone": {
+                  "type": "string"
+                },
+                "fone": {
+                  "type": "string"
+                },
+                "dddCelular": {
+                  "type": "string"
+                },
+                "celular": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dddFone",
+                "fone",
+                "dddCelular",
+                "celular"
+              ]
+            },
+            "nacionalidade": {
+              "type": "object",
+              "properties": {
+                "cdPais": {
+                  "type": "integer"
+                },
+                "dsNacionalidade": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cdPais",
+                "dsNacionalidade"
+              ]
+            },
+            "pep": {
+              "type": "object",
+              "properties": {
+                "codigo": {
+                  "type": "integer"
+                },
+                "descricao": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigo",
+                "descricao"
+              ]
+            },
+            "tipoResponsavel": {
+              "type": "object",
+              "properties": {
+                "cdTipoResponsavel": {
+                  "type": "integer"
+                },
+                "dsTipoResponsavel": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cdTipoResponsavel",
+                "dsTipoResponsavel"
+              ]
+            },
+            "flAssinaPelaEmpresa": {
+              "type": "string"
+            },
+            "sexo": {
+              "type": "string"
+            },
+            "nomeMae": {
+              "type": "string"
+            },
+            "cdPreCadastroResponsavel": {
+              "type": "integer"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cdEstabelecimentoResponsavel",
+            "nrCnpjCpf",
+            "dsNome",
+            "dtNascFundacao",
+            "participacao",
+            "endereco",
+            "telefone",
+            "nacionalidade",
+            "pep",
+            "tipoResponsavel",
+            "flAssinaPelaEmpresa",
+            "sexo",
+            "nomeMae",
+            "cdPreCadastroResponsavel",
+            "email"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cdEstabelecimentoResponsavel": {
+              "type": "integer"
+            },
+            "nrCnpjCpf": {
+              "type": "string"
+            },
+            "dsNome": {
+              "type": "string"
+            },
+            "dtNascFundacao": {
+              "type": "string"
+            },
+            "participacao": {
+              "type": "integer"
+            },
+            "endereco": {
+              "type": "object",
+              "properties": {
+                "pais": {
+                  "type": "object",
+                  "properties": {
+                    "cdPais": {
+                      "type": "integer"
+                    },
+                    "dsPais": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "cdPais",
+                    "dsPais"
+                  ]
+                }
+              },
+              "required": [
+                "pais"
+              ]
+            },
+            "telefone": {
+              "type": "object",
+              "properties": {
+                "dddFone": {
+                  "type": "string"
+                },
+                "fone": {
+                  "type": "string"
+                },
+                "dddCelular": {
+                  "type": "string"
+                },
+                "celular": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dddFone",
+                "fone",
+                "dddCelular",
+                "celular"
+              ]
+            },
+            "nacionalidade": {
+              "type": "object",
+              "properties": {
+                "cdPais": {
+                  "type": "integer"
+                },
+                "dsNacionalidade": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cdPais",
+                "dsNacionalidade"
+              ]
+            },
+            "pep": {
+              "type": "object",
+              "properties": {
+                "codigo": {
+                  "type": "integer"
+                },
+                "descricao": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigo",
+                "descricao"
+              ]
+            },
+            "tipoResponsavel": {
+              "type": "object",
+              "properties": {
+                "cdTipoResponsavel": {
+                  "type": "integer"
+                },
+                "dsTipoResponsavel": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cdTipoResponsavel",
+                "dsTipoResponsavel"
+              ]
+            },
+            "flAssinaPelaEmpresa": {
+              "type": "string"
+            },
+            "sexo": {
+              "type": "string"
+            },
+            "nomeMae": {
+              "type": "string"
+            },
+            "cdPreCadastroResponsavel": {
+              "type": "integer"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cdEstabelecimentoResponsavel",
+            "nrCnpjCpf",
+            "dsNome",
+            "dtNascFundacao",
+            "participacao",
+            "endereco",
+            "telefone",
+            "nacionalidade",
+            "pep",
+            "tipoResponsavel",
+            "flAssinaPelaEmpresa",
+            "sexo",
+            "nomeMae",
+            "cdPreCadastroResponsavel",
+            "email"
+          ]
+        }
+      ]
+    },
+    "enderecos": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "tipoEndereco": {
+              "type": "object",
+              "properties": {
+                "codigo": {
+                  "type": "integer"
+                },
+                "nome": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigo",
+                "nome"
+              ]
+            },
+            "logradouro": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "abreviatura": {
+                  "type": "string"
+                },
+                "dsTipoLogradouro": {
+                  "type": "string"
+                },
+                "cdTipoLogradouro": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "nome",
+                "abreviatura",
+                "dsTipoLogradouro",
+                "cdTipoLogradouro"
+              ]
+            },
+            "numero": {
+              "type": "integer"
+            },
+            "bairro": {
+              "type": "string"
+            },
+            "cep": {
+              "type": "string"
+            },
+            "cidade": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "codigo": {
+                  "type": "integer"
+                },
+                "cdEstado": {
+                  "type": "string"
+                },
+                "cdPais": {
+                  "type": "integer"
+                },
+                "dsPais": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "codigo",
+                "cdEstado",
+                "cdPais",
+                "dsPais"
+              ]
+            },
+            "telefone": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "tipoEndereco",
+            "logradouro",
+            "numero",
+            "bairro",
+            "cep",
+            "cidade",
+            "telefone"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tipoEndereco": {
+              "type": "object",
+              "properties": {
+                "codigo": {
+                  "type": "integer"
+                },
+                "nome": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigo",
+                "nome"
+              ]
+            },
+            "logradouro": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "abreviatura": {
+                  "type": "string"
+                },
+                "dsTipoLogradouro": {
+                  "type": "string"
+                },
+                "cdTipoLogradouro": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "nome",
+                "abreviatura",
+                "dsTipoLogradouro",
+                "cdTipoLogradouro"
+              ]
+            },
+            "numero": {
+              "type": "integer"
+            },
+            "bairro": {
+              "type": "string"
+            },
+            "cep": {
+              "type": "string"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "cidade": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "codigo": {
+                  "type": "integer"
+                },
+                "cdEstado": {
+                  "type": "string"
+                },
+                "cdPais": {
+                  "type": "integer"
+                },
+                "dsPais": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "codigo",
+                "cdEstado",
+                "cdPais",
+                "dsPais"
+              ]
+            },
+            "telefone": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "tipoEndereco",
+            "logradouro",
+            "numero",
+            "bairro",
+            "cep",
+            "latitude",
+            "longitude",
+            "cidade",
+            "telefone"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tipoEndereco": {
+              "type": "object",
+              "properties": {
+                "codigo": {
+                  "type": "integer"
+                },
+                "nome": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigo",
+                "nome"
+              ]
+            },
+            "logradouro": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "abreviatura": {
+                  "type": "string"
+                },
+                "dsTipoLogradouro": {
+                  "type": "string"
+                },
+                "cdTipoLogradouro": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "nome",
+                "abreviatura",
+                "dsTipoLogradouro",
+                "cdTipoLogradouro"
+              ]
+            },
+            "numero": {
+              "type": "integer"
+            },
+            "bairro": {
+              "type": "string"
+            },
+            "cep": {
+              "type": "string"
+            },
+            "cidade": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string"
+                },
+                "codigo": {
+                  "type": "integer"
+                },
+                "cdEstado": {
+                  "type": "string"
+                },
+                "cdPais": {
+                  "type": "integer"
+                },
+                "dsPais": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nome",
+                "codigo",
+                "cdEstado",
+                "cdPais",
+                "dsPais"
+              ]
+            },
+            "telefone": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "ddd": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "tipoTelefone": {
+                      "type": "object",
+                      "properties": {
+                        "codigo": {
+                          "type": "integer"
+                        },
+                        "descricao": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "codigo",
+                        "descricao"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ddd",
+                    "numero",
+                    "tipoTelefone"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "tipoEndereco",
+            "logradouro",
+            "numero",
+            "bairro",
+            "cep",
+            "cidade",
+            "telefone"
+          ]
+        }
+      ]
+    },
+    "ramoAtividade": {
+      "type": "object",
+      "properties": {
+        "cdRamoAtividade": {
+          "type": "integer"
+        },
+        "dsRamoAtividade": {
+          "type": "string"
+        },
+        "subRamoAtividade": {
+          "type": "object",
+          "properties": {
+            "cdSubRamoAtividade": {
+              "type": "integer"
+            },
+            "dsSubRamoAtividade": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "cdSubRamoAtividade",
+            "dsSubRamoAtividade"
+          ]
+        }
+      },
+      "required": [
+        "cdRamoAtividade",
+        "dsRamoAtividade",
+        "subRamoAtividade"
+      ]
+    }
+  },
+  "required": [
+    "cdEstabelecimento",
+    "cdPreCadastro",
+    "cnpjCpf",
+    "email",
+    "tipoPessoa",
+    "razaoSocial",
+    "nomeFantasia",
+    "mcc",
+    "faturamentoAnual",
+    "datafuncacao",
+    "vlPatrimonioPessoal",
+    "responsaveis",
+    "enderecos",
+    "ramoAtividade"
+  ]
+}
